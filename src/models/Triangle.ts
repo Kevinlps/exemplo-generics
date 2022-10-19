@@ -1,9 +1,10 @@
-import IPolygon from "./IPolygon";
+import Polygon from "./Polygon";
 
-export default class Triangle implements IPolygon{
+export default class Triangle extends Polygon{
     size: number
 
     constructor(size: number){
+        super()
         this.size = size
     }
     area(): number {

@@ -10,6 +10,7 @@
 //m1.sayHello()
 //m1.sayHello()
 
+import Polygon from "./models/Polygon";
 import Square from "./models/Square";
 import Triangle from "./models/Triangle";
 
@@ -34,10 +35,13 @@ import Triangle from "./models/Triangle";
 //const obj5 = new MyGenericClass<any[]>([])
 //obj5.sayMessage()
 
-const square = new Square(12)
-console.log(`Area : ` , square.area())
-console.log(`Perimetro: `, square.perimeter())
+const sqr = new Square(12)
+console.log(`Area : ` , sqr.area())
+console.log(`Perimetro: `, sqr.perimeter())
 
-const triangle = new Triangle(12)
-console.log(`Area : ` , triangle.area())
-console.log(`Perimetro: `, triangle.perimeter())
+const tri = new Triangle(12)
+console.log(`Area : ` , tri.area())
+console.log(`Perimetro: `, tri.perimeter())
+
+console.log(`soma das areas : `, Polygon.sumAreas(sqr,tri))
+console.log(`soma dos perimetros : `, Polygon.sumPerimeters(sqr,tri))

@@ -1,9 +1,10 @@
-import IPolygon from "./IPolygon";
+import Polygon from "./Polygon";
 
-export default class Square implements IPolygon{
+export default class Square extends Polygon{
     size: number
 
     constructor(size: number){
+        super()
         this.size = size
     }
     area(): number {
